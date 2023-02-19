@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./scyle.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="container">
+            <form action="">
+                <label for="name">Name</label><br>
+                <input type="text" class="inp" id="name" autocomplete="off"  placeholder="Enter your name" onkeyup="validateName()" >
+                <span id="name-error"></span>
+                <br><br>
+                <label for="number">Phone no</label><br>
+                <input type="text" class="inp" id="phone" autocomplete="off" placeholder="1234567890" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+                <br><br>
+                <label for="name">Email Id</label><br>
+                <input type="email" class="inp" id="email" autocomplete="off"  placeholder="your Email" onkeyup="validatEmail()">
+                <span id="email-error"></span>
+                <br><br>
+                <label for="text">Your message</label><br>
+                <textarea name="text" rows="6" class="inp" autocomplete="off" id="message" placeholder="Enter your message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+                <br><br>
+                <button id="btn"  onclick="return validateSubmit()">submit</button>
+                <br><br>
+                <span id="submit-error" > </span>
+                
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="https://kit.fontawesome.com/23ac6a506b.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    
+   
+</body>
+
+</html>
